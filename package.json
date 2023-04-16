@@ -1,0 +1,30 @@
+{
+	"name": "reporty.ithundxr.dev",
+	"version": "1.0.0",
+	"type": "module",
+	"private": true,
+	"lint-staged": {
+		"**/*": "prettier --write --ignore-unknown"
+	},
+	"scripts": {
+		"dev": "astro dev",
+		"start": "astro dev",
+		"build": "astro build",
+		"preview": "astro preview",
+		"astro": "astro"
+	},
+	"dependencies": {
+		"@astrojs/sitemap": "^1.1.0",
+		"@astrojs/tailwind": "^3.1.1",
+		"@astrojs/vercel": "^3.2.4",
+		"@lucia-auth/adapter-prisma": "^1.0.0",
+		"@lucia-auth/oauth": "^1.0.0",
+		"@prisma/client": "^4.12.0",
+		"astro": "^2.3.0",
+		"astro-iconify": "^1.2.0",
+		"astro-robots-txt": "^0.4.0",
+		"auth-astro": "^2.0.2",
+		"lucia-auth": "^1.0.0",
+		"tailwindcss": "^3.2.4"
+	}
+}

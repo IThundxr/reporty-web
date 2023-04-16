@@ -1,0 +1,23 @@
+---
+export interface Props {
+	iconname: string;
+	width: string;
+	service: string;
+}
+
+const { width } = Astro.props;
+const { iconname } = Astro.props;
+const { service } = Astro.props;
+import { Icon } from "astro-iconify";
+---
+
+<form action="/api/logout" method="post" class="flex items-center justify-center w-40 p-2 m-1 text-center bg-gray-500 rounded-lg hover:bg-gray-600">
+	<Icon name={iconname} width={width} />
+    <input type="submit" class="ml-2 text-lg text-white" value={service} />
+</form>
+
+<style lang="css">
+	[astro-icon] {
+		color: white;
+	}
+</style>
