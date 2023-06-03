@@ -17,14 +17,15 @@
 		"@astrojs/sitemap": "^1.1.0",
 		"@astrojs/tailwind": "^3.1.1",
 		"@astrojs/vercel": "^3.2.4",
-		"@lucia-auth/adapter-prisma": "^1.0.0",
+		"@lucia-auth/adapter-prisma": "^2.0.0",
 		"@lucia-auth/oauth": "^1.0.0",
-		"@prisma/client": "^4.12.0",
+		"@prisma/client": "^4.13.0",
 		"astro": "^2.3.0",
 		"astro-iconify": "^1.2.0",
-		"astro-robots-txt": "^0.4.0",
-		"auth-astro": "^2.0.2",
+		"astro-robots-txt": "^0.5.0",
+		"auth-astro": "^3.0.0",
 		"lucia-auth": "^1.0.0",
+		"prisma": "^4.13.0",
 		"tailwindcss": "^3.2.4"
 	}
 }

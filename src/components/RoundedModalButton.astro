@@ -1,6 +1,5 @@
 ---
 export interface Props {
-	path: string;
 	iconname: string;
 	width: string;
 	service: string;
@@ -8,7 +7,6 @@ export interface Props {
 }
 
 const { width } = Astro.props;
-const { path } = Astro.props;
 const { iconname } = Astro.props;
 const { service } = Astro.props;
 const { css } = Astro.props;
@@ -16,15 +14,15 @@ const { css } = Astro.props;
 import { Icon } from "astro-iconify";
 ---
 
-<a
-	href={path}
-	aria-label={service}
-	target="_self"
+<button
+	type="button"
 	class={`flex items-center justify-center p-2 m-1 w-40 text-center rounded-lg ${css}`}
+	data-bs-toggle="modal"
+	data-bs-target="#exampleModal"
 >
 	<Icon name={iconname} width={width} />
 	<div class="ml-2 text-lg text-white">{service}</div>
-</a>
+</button>
 
 <style lang="css">
 	[astro-icon] {

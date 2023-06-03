@@ -25,7 +25,8 @@ export const get: APIRoute = async (context) => {
 				location: "/"
 			}
 		});
-	} catch {
+	} catch (err) {
+		console.error(err)
 		return new Response(null, {
 			status: 500
 		});

@@ -15,14 +15,27 @@ if (!user.admin) return Astro.redirect("/", 302);
 		<div
 			class="p-10 space-y-5 text-center bg-white rounded-2xl drop-shadow-lg shadow-m"
 		>
-		<div class="m-4 text-4xl font-bold text-gray-700">Reporty</div>
-		<div class="m-4 text-gray-700">Welcome to the Reporty Admin Dashboard, {user.username}!</div>
-		<div class="flex justify-center">
-			<RoundedButton iconname="material-symbols:arrow-back-rounded" path="/" service="Go Back" width="25" css="bg-gray-500 hover:bg-gray-600"/>
-		</div>
-		<div class="flex justify-center">
-			<LogoutButton iconname="ic:baseline-log-out" service="Log Out" width="25"/>
-		</div>
+			<div class="m-4 text-4xl font-bold text-gray-700">Reporty</div>
+			<div class="m-4 text-gray-700">
+				Welcome to the Reporty Admin Dashboard, {user.username}!
+			</div>
+			<div class="flex justify-center">
+				<RoundedButton
+					iconname="material-symbols:arrow-back-rounded"
+					path="/"
+					service="Go Back"
+					width="25"
+					css="bg-gray-500 hover:bg-gray-600"
+				/>
+			</div>
+			<hr />
+			<div class="flex justify-center">
+				<LogoutButton
+					iconname="ic:baseline-log-out"
+					service="Log Out"
+					width="25"
+				/>
+			</div>
 		</div>
 	</div>
 </MainLayout>

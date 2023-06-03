@@ -7,16 +7,16 @@ export const get: APIRoute = async ({ url, cookies }) => {
 		const [url, state] = await discordAuth.getAuthorizationUrl();
 		cookies.set("oauth_state", state, {
 			path: "/",
-			maxAge: 60 * 60
+			maxAge: 60 * 60,
 		});
 		return new Response(null, {
 			status: 302,
 			headers: {
-				location: url.toString()
-			}
+				location: url.toString(),
+			},
 		});
 	}
 	return new Response(null, {
-		status: 400
+		status: 400,
 	});
 };
